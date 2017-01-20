@@ -1,0 +1,341 @@
+<!DOCYTYPE html>
+
+
+<html>
+
+	<head lang="eng">
+		<meta charset="utf-8">
+		<title>Scroling</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		
+		<script async="" src="./menudemo_files/adpacks-demo.js"></script>
+<style type="text/css">#adpacks-wrapper{font-family: Arial, Helvetica;width:400px;position:fixed;_position: absolute;bottom: 0;right: 5px;z-index: 9999;background: #eee;padding: 30px;box-shadow: 0 0 2px #444;border-radius: 5px 5px 0 0;}				body .adpacks{background:#fff;padding:15px;margin:15px 0 0;border:3px solid #eee;}.adpacks-wrap {display: block;overflow: hidden;}.adpacks-img {float: left;margin-right: 10px;	  width: 130px;height: 100px;}.adpacks-text {display: block;line-height: normal;color: #333;font-size: 12px;text-decoration: none;text-align: left;}.adpacks-poweredby {display: none;}</style><script id="_carbonads_projs" type="text/javascript" src="./menudemo_files/C6AILKT.json"></script></head>
+
+<script type="text/javascript" src="jquery-1.11.0.js"></script>
+<script type="text/javascript" src="jquery.stickyfooterbar.js"></script>
+
+	</head>
+	
+	<body>
+	
+	<header class="headertop" >
+	
+	<div class="logoMobile">
+	
+	<h1>Mobile Application Development<h1>
+	</div>
+	
+<a class= "logoicon" href="index.html " ><img src="images/Logo.png"></a>
+<a class= "iconfacebook" href="https://www.facebook.com/alex.santosdosreis " ><img src="images/facebook.png"></a>
+<a class= "iconlinkedin" href="https://ie.linkedin.com/in/alex-santos-dos-reis-8551295b" ><img src="images/linkedin.png"></a>
+<a class= "icondropBox" href="https://www.dropbox.com/home " ><img src="images/dropBox.png"></a>
+<a class= "icongitHub" href="https://github.com/AlexSantos1986 " ><img src="images/gitHub.png"></a>
+</header>
+	
+
+	<nav id="menu-wrap">
+	
+	<div id="menu-trigger">Menu</div>
+	<ul id="menu">
+		<li><a href="index.html">Home</a></li>
+
+		<li>
+			<a href="">Learn Java</a>
+			<ul>
+				<li>
+					<a href="">Java Concepts</a>
+					<ul>
+					    
+						<li><a href="encap.html">Encapsulation</a></li>
+						<li><a href="Inheritance.html">Inheritance</a></li>
+						<li><a href="Polymorphism.html">Polymorphism</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="career_java_development.html">Career Path Guide</a>
+
+				</li>
+
+			
+		</ul>
+				</li>
+				<li>
+					<a href="">about Java</a>
+					<ul>
+
+						<li><a href="WhyJava.html">Why Java</a></li>
+						<li><a href="JavaHistory.html">Java History</a></li>
+
+					</ul>
+				</li>
+
+				<li><a href="">Will content</a></li>
+
+	
+	
+	
+	
+</nav>
+
+
+
+    <div class="sect sectOne"></div>
+	<div class="subSection java">
+	<div class="container">
+
+    <h2>Basic introduction to inheritance</h2>
+
+    <p>
+    Java Inheritance defines an is-a relationship between a superclass and its subclasses. This means that an object of a subclass
+    can be used wherever an object of the superclass can be used. Class Inheritance in java mechanism is used to build new classes
+    from existing classes. The inheritance relationship is transitive: if class x extends class y, then a class z, which extends class x,
+    will also inherit from class y.
+    </p>
+
+    <p>
+    For example a car class can inherit some properties from a General vehicle class. Here we find that the base class is the vehicle
+    class and the subclass is the more specific car class. A subclass must use the extends clause to derive from a super class which must be
+    written in the header of the subclass definition. The subclass inherits members of the superclass and hence promotes code reuse. The subclass itself
+    can add its own new behavior and properties. The java.lang.Object class is always at the top of any Class inheritance hierarchy.
+    </p>
+
+     <h2>Concrete classes with inheritance</h2>
+    <p>
+    A concrete class is the standard java class.All of its method are implemented and it can be instantiated.The following example below uses
+    a basic bicycle class.The base class represents a basic bicycle.Another class represents a ten-speed bicycle.It is called <b>SpeedBicycle</b> and
+    extends the <b>Bicycle</b> class.The <b>SpeedBicycle</b> class is able to inherit some of its functionality while overriding the parts of the base class that need
+    to behave different.The <b>SpeedBicycle</b> class has the ability to change its gear ratio in addition to what the <b>Bicycle</b> class can do.
+    </p>
+
+    <div class="blockquote">
+    <p><br/>
+    public class Bicycle{<br/><br/>
+    private float wheelRPM;<br/>
+    private int degreeOfTurn;<br/>
+
+    public void pedalRPM(float pedalRPM){<br/><br/>
+
+    float gearRation = 2f;<br/>
+    this.wheelRPM = pedalRPM * getRadio;<br/>
+
+    }<br/><br/>
+
+    public void setDegreeOfTurn(int degreeOfTurn){<br/>
+    this.degreeOfTurn = degreeOfTurn;<br/>
+
+    }<br/><br/>
+
+    public float getWheelRPM(){<br/>
+    return this.wheelRPM;<br/>
+
+    }<br/><br/>
+
+    public int getDegreeOfTurn(){<br/>
+    return this.degreeOfTurn;<br/>
+
+    }<br/><br/>
+
+    }<br/>
+    </p>
+
+  </div>
+
+    <p>
+    The <b>Bicycle</b> class is concrete class and,therefore,can be instantiated.It represents a basic bicycle.It has two instance variable:
+    <i>wheelRPM</i> which is used to store the <i>RPM</i> of the wheels, and degreeOfTurn, which is used to store the degree the handlebars are
+    turned.Each variable has a getter, and <i>degreeOfTurn</i> has a setter.The <i>wheelRPM</i> variable is set with the method <i>pedalRPM</i>
+    (float pedalRPM). This accepts an argument that contains the RPM of the pedals and then multiplies that by a set gear ratio to find and set
+    the <i>wheelRPM</i> variable.
+    following example below shows the SpeedBicycle class.It extends the Bicycle class:
+    </p>
+
+   <div class="blockquote">
+    <p><br/>
+     public class SpeedBicycle extends Bicycle{<br/><br/>
+     private float gearRatio = 2f;<br/>
+     private float wheelRPM;<br/>
+
+     public void setGearRatio(float gearRatio){<br/>
+     this.gearRatio = gearRatio;<br/>
+
+     }<br/><br/>
+
+     public void pedalRPM(float pedalRatio){<br/>
+     this.wheelRPM = pedalRatio * gearRatio;<br/>
+     <br/>
+     }<br/><br/>
+
+     public float getWheelRPM(){<br/>
+     return this.wheelRPM;<br/>
+
+     }<br/>
+     }<br/>
+
+    </p>
+
+    </div>
+
+
+    <p>
+    The SpeedBicycle class represents a bicycle that has ten different possible gear ratios.The regular Bicycle class cannot be used, because
+    it has a fixed gear ratio.The SpeedBicycle class adds a method and instance variable so a gear ratio can be set.It also overrides the
+    wheelRPM variable.This must be done because the Bicycle class has no setter to set that variable directly.The SpeedBicycle also overrides the
+    pedalRPM(float pedalRPM) method.In the Bicycle class version of this method,the gear ratio was fixed.In the newer version,it uses the gear ratio that can
+    set.To retrieve the wheelRPM variable the getter must also be overridden.This is because the original version of this method can return
+    only the instance variable that is in its same class.
+
+    </p>
+
+    </div>
+	</div>
+
+	<div class="sect sectTwo"></div>
+	<div class="subSection java">
+
+		<div class="container">
+
+     <h2>Inheritance with abstract classes</h2>
+
+     <p>
+   An abstract class is a java class that cannot be instantiated.Another concrete class must extend it.An abstract class may contain both
+   concrete methods that have implementations and abstract methods that must implemented by the subclass.
+   We will demonstrate an example creating a plant abstract class.It has abstract class that is extended by MapleTree class and Tulip class.
+   The plant class is a good abstract class, because a plant is an abstract, or general,thing.Plants all share some characteristics that can
+   be placed in this class.Each specific class can then contain the implementation details.
+
+    </p>
+
+  <div class="blockquote">
+   <p><br/>
+   public class Plant{<br/><br/>
+   private int age=0;<br/>
+   private int height=0;<br/>
+
+   public int getAge(){<br/>
+   return age;<br/>
+   }<br/><br/>
+
+   public void addHeight(){<br/>
+   age++;<br/>
+
+   }<br/><br/>
+
+   public int getHeight(){<br/>
+   return height;<br/>
+
+   }<br/><br/>
+
+   public void setHeight(int height){<br/>
+   this.height = height<br/>
+
+   }<br/><br/>
+
+   abstract public void doSpring();<br/>
+   abstract public void doSummer();<br/>
+   abstract public void doFall();<br/>
+   abstract public void doWinter();<br/>
+
+   }
+
+    </p>
+
+   </div>
+
+     <p>
+     This class offers a very simple view of what represents a plant.It contains two instance variable that every type of plant would use:
+     age and height.There is both a getter and setter for height and getter for age.The age instance variable has a method is used to increment
+     it each year.The plant class has four abstract methods.Each of these methods represents the action that plant must take during the specific
+     to the type of plant and,therefore, cannot be generalized. Having them declared in the abstract Plant class guarantee that any class that
+     extends the Plant class must implement them.
+
+     </p>
+
+		</div>
+	</div>
+
+	<div class="sect sectThree"></div>
+	<div class="subSection java">
+		<div class="container">
+
+     <h2>Inheritance and Method Overriding:</h2>
+
+     <p>By using super we can access the overridden method in the super class.</p>
+
+
+    <div class="blockquote">
+
+<p>
+class Shape {<br/>
+   private int length;<br/>
+   private int breadth;<br/>
+   // default Constructor<br/>
+   Shape() {<br/>
+      length = 0;<br/>
+      breadth = 0;<br/>
+   }<br/>
+   // Parameterized Constructor<br/>
+   Shape(int len, int bdth) {<br/>
+      length = len;<br/>
+      breadth = bdth;<br/>
+   }<br/>
+   void showattributes() {<br/>
+      System.out.println("length : " + length);<br/>
+      System.out.println("breadth : " + breadth);<br/>
+   } <br/>
+}<br/><br/>
+
+// A subclass which extends for shape<br/>
+class Rectangle extends Shape {<br/>
+   private String type;<br/>
+   /* default Constructor<br/>
+   */<br/>
+   Rectangle() {<br/>
+      type = null;<br/>
+   }<br/>
+   // Parameterized Constructor<br/>
+   Rectangle(String ty, int len, int bdth) {<br/>
+     super(len,bdth);<br/>
+     type = ty;<br/>
+   }<br/>
+   void showattributes() {<br/>
+      // showattributes() of class Shape is called<br/>
+      super.showattributes(); <br/>
+      System.out.println("type : " + type);<br/>
+   }<br/>
+}<br/>
+
+public class Test {<br/>
+   public static void main(String args[]) {<br/>
+       Rectangle rect = new Rectangle("Blue",5,7);<br/>
+       // showattributes() in rectangle is called<br/>
+       rect.showattributes();<br/>
+   }<br/>
+}<br/>
+</p>
+</div>
+
+
+
+   <div class="blockquote">
+<h4><b>Output:</b><h4>
+<p><br/>
+length : 5<br/>
+breadth : 7<br/>
+type : Blue
+</p>
+</div>
+
+
+</div>
+
+  </div>
+
+	<div id="footer">Copyright 2016	| National College of Ireland	| Hdip Mobile Software Dev</div>
+	</div>
+
+
+
+</body>
+
+</html>

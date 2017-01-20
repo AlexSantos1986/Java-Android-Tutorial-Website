@@ -1,0 +1,265 @@
+<!DOCYTYPE html>
+
+
+<html>
+
+	<head lang="eng">
+		<meta charset="utf-8">
+		<title>Scroling</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		
+		<script async="" src="./menudemo_files/adpacks-demo.js"></script>
+<style type="text/css">#adpacks-wrapper{font-family: Arial, Helvetica;width:400px;position:fixed;_position: absolute;bottom: 0;right: 5px;z-index: 9999;background: #eee;padding: 30px;box-shadow: 0 0 2px #444;border-radius: 5px 5px 0 0;}				body .adpacks{background:#fff;padding:15px;margin:15px 0 0;border:3px solid #eee;}.adpacks-wrap {display: block;overflow: hidden;}.adpacks-img {float: left;margin-right: 10px;	  width: 130px;height: 100px;}.adpacks-text {display: block;line-height: normal;color: #333;font-size: 12px;text-decoration: none;text-align: left;}.adpacks-poweredby {display: none;}</style><script id="_carbonads_projs" type="text/javascript" src="./menudemo_files/C6AILKT.json"></script></head>
+
+<script type="text/javascript" src="jquery-1.11.0.js"></script>
+<script type="text/javascript" src="jquery.stickyfooterbar.js"></script>
+
+	</head>
+	
+	<body>
+	
+	<header class="headertop" >
+	
+	<div class="logoMobile">
+	
+	<h1>Mobile Application Development<h1>
+	</div>
+	
+<a class= "logoicon" href="index.html " ><img src="images/Logo.png"></a>
+<a class= "iconfacebook" href="https://www.facebook.com/alex.santosdosreis " ><img src="images/facebook.png"></a>
+<a class= "iconlinkedin" href="https://ie.linkedin.com/in/alex-santos-dos-reis-8551295b" ><img src="images/linkedin.png"></a>
+<a class= "icondropBox" href="https://www.dropbox.com/home " ><img src="images/dropBox.png"></a>
+<a class= "icongitHub" href="https://github.com/AlexSantos1986 " ><img src="images/gitHub.png"></a>
+</header>
+	
+
+	<nav id="menu-wrap">
+	
+	<div id="menu-trigger">Menu</div>
+	<ul id="menu">
+		<li><a href="index.html">Home</a></li>
+
+		<li>
+			<a href="">Learn Java</a>
+			<ul>
+				<li>
+					<a href="">Java Concepts</a>
+					<ul>
+					    
+						<li><a href="encap.html">Encapsulation</a></li>
+						<li><a href="Inheritance.html">Inheritance</a></li>
+						<li><a href="Polymorphism.html">Polymorphism</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="career_java_development.html">Career Path Guide</a>
+
+				</li>
+
+			
+		</ul>
+				</li>
+				<li>
+					<a href="">about Java</a>
+					<ul>
+
+						<li><a href="WhyJava.html">Why Java</a></li>
+						<li><a href="JavaHistory.html">Java History</a></li>
+
+					</ul>
+				</li>
+
+				<li><a href="">Will content</a></li>
+
+	
+	
+	
+</nav>
+
+    <div class="sect sectOne"></div>
+	<div class="subSection java">
+	<div class="container">
+
+
+    <h2>Understand Encapsulation principles</h2>
+
+<p>Encapsulation is a concept of storing data together with methods that operate on that data. Objects are used as the container
+for the data and code.I will be showing the principles of encapsulation and how it should be applied by a developer.
+Encapsulation allows for data and method hiding. Information hiding makes it possible to expose a public interface while hiding the
+implementation details. I will also show how some good basic design principle that should be used with the java language.
+ </p>
+ <br/>
+
+ <h2> Good design with Encapsulation</h2>
+
+ <p>The fundamental of an object-oriented language is that software is designed by creating discrete objects that interact to make
+ up the functionality of the application.Encapsulation is the concept of storing similar data and methods together in discrete classes.
+ In many non-object-oriented languages, there is no association between where the data is and where the code is.This can increase
+ complexity of maintaining the code, because ofter the variables that the code is using are spread apart over the code base. Bugs in
+ the code can be hard to find and resolve due to different remote procedures using the same variable.<br/>
+
+ Encapsulation tries to solve this problems.It let you create code that is easier to read and maintain by allowing you to group related
+ variable and methods together in classes.
+
+
+</p><br/>
+
+<div class="blockquote">
+
+<p><br/>//save as Student.java  <br/>
+package com.MAD;  <br/>
+public class Student{  <br/>
+private String name;  <br/><br/>
+
+public String getName(){  <br/>
+return name;  <br/><br/>
+}  <br/>
+public void setName(String name){  <br/>
+this.name=name;  <br/>
+}  <br/>
+}<br/>
+</p>
+
+</div>
+
+</div>
+	</div>
+
+
+	<div class="sect sectTwo"></div>
+	<div class="subSection java">
+
+		<div class="container">
+
+ <h2>Access Modifiers</h2>
+
+ <p>Access modifiers are keywords that define what can access methods and instance variables.The three access modifier are private,
+  protected, and public. These all change the default level of access.The default access level does not use a keyword and is assigned
+ to a method or instance variable when neither <b>private, protected or public</b> uses and the area is left blank.Access modifiers are an
+ important concept in object-oriented language.They allow the implementation details to be hidden in a class.The developer can choose
+ specially what parts of class accessible to other objects.
+ </p>
+
+ <p>
+ As mentioned, Java uses three access modifiers: <b> private, protected and public.</b>
+ The <b>private</b> access modifier is the most restrictive and most commonly used access modifier.Any method or instance variable that is marked
+ as <b>private</b> can be accessed only by other methods in the same class. Subclasses cannot access instance variable or methods that are <b>private</b>.
+ The following is an example of the <b>private</b> keyword:
+</p>
+
+ <div class="blockquote">
+ <p><br/>
+ private int numberOfStudents;</br><br/>
+ private int calculateAverage() {...}<br/><br/>
+ </p>
+
+ </div>
+
+<p> The default access level is the second most restrictive.It is often referred to as package-private.This access level allows to its methods
+ and instance variables from code that is the same package.The default access level does not have a keyword to indicate it is use.A method or instance
+ variable is set to default when an access modifier is omitted.The following is an example of this access level in use:<br/>
+ </p>
+
+ <div class="blockquote">
+ <p><br/>
+ int Student;<br><br/>
+ double calculateStudentGrade(){...}<br/><br/>
+
+ </p>
+
+ </div>
+
+ <p>The <b>protected</b> access modifier is the third most restrictive.It is the same as the default access level but adds the ability of subclasses
+ outside of the package to access its methods or instance variable.This means the methods that can access this data must either be in the same package
+ or be in a subclass of the class that contains the protected data. Remember that a subclass is a class is a class that extends another class.
+ Have a look at the example of the use of <b>protected</b> modifier:<br/>
+ </p>
+
+ <div class="blockquote">
+ <p><br/>
+ protected String studentName;<br/><br/>
+ protected char getStudentFirstChar(){...}<br/><br/>
+ </p>
+  </div>
+
+ <p>
+The final access modifier is public.This is the least restrictive and second most common access modifier.The public access modifier provides
+no restriction to what can access its methods and instance variable regardless of which package it is contained in or which superClass it extends.
+A variable named marked as <b>public </b> is accessible to the world.The following is an example of using the <b>public </b>access modifier:</br>
+ </p>
+
+  <div class="blockquote">
+ <p><br/>
+public String StudentAddress;<br/><br/>
+public int findZipCode;<br/><br/>
+ </p>
+
+ </div>
+
+		</div>
+	</div>
+
+		<div class="sect sectThree"></div>
+	<div class="subSection java">
+		<div class="container">
+
+<h2>Getters and Setters</h2>
+
+<p>
+<b>Getters and setters</b> are the basic final concept of hiding information and encapsulation.As was discussed previously,it is good design to make all instance variable
+<b>private</b>.This means that subclasses or any external classes have no way to access these variables. Sometimes an external object may need to read one of these
+variables to determine its state, or it may have to set the value.To achieve this, a public method is created for the variable, both to get abd set value. These are
+called <i>getters</i> and <i>setters</i>.They can be as simple as one line that only sets or returs a value.
+The example below is a class that has one instance variable and a setter and getter:
+</p>
+
+ <div class="blockquote">
+<p><br/>
+public class MyClass{ <br/><br/>
+
+private String className; <br/><br/>
+
+public String getClassName(){<br/><br/>
+return className;<br/><br/>
+}<br/><br/>
+
+public void setClassName(String className){<br/><br/>
+ this.className= className;<br/><br/>
+
+ }<br/><br/>
+
+}<br/>
+
+</p>
+</div>
+
+<p>
+The two methods that are present are getter and setter for the variable className.In this case,the class is giving read and write access to the
+variable via the methods. In some cases, a class may give only one or the other. The getter and setter in this demonstration are simple and
+only set or return the value.However ,if the class had to perform an action every time the className variable was changed,it could be done from
+the setter. For example, each time the className variable is changed,the class must record it.This can be done in the setter.This is the benefit
+of keeping instance variable private.It gives control to the class as to how its instance variable are accessed.
+
+</p>
+
+<p>
+When developers are working with a class they expect to find getters and setters. They also expect name convention. When creating getter,the
+name should start with lowercase get, followed by variable name with no space and the first letter capitalized. When creating a setter, a similar
+convention should be followed. A setter should start with the word set, followed by the variable name with the first letter capitalized.
+</p>
+
+
+
+  </div>
+</div>
+
+</div>
+	<div id="footer">Copyright 2016	| National College of Ireland	| Hdip Mobile Software Dev</div>
+	</div>
+<!--------cdsd------------>
+
+
+</body>
+
+</html>

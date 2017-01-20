@@ -1,0 +1,369 @@
+<!DOCYTYPE html>
+
+
+<html>
+
+	<head lang="eng">
+		<meta charset="utf-8">
+		<title>Scroling</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		
+		<script async="" src="./menudemo_files/adpacks-demo.js"></script>
+<style type="text/css">#adpacks-wrapper{font-family: Arial, Helvetica;width:400px;position:fixed;_position: absolute;bottom: 0;right: 5px;z-index: 9999;background: #eee;padding: 30px;box-shadow: 0 0 2px #444;border-radius: 5px 5px 0 0;}				body .adpacks{background:#fff;padding:15px;margin:15px 0 0;border:3px solid #eee;}.adpacks-wrap {display: block;overflow: hidden;}.adpacks-img {float: left;margin-right: 10px;	  width: 130px;height: 100px;}.adpacks-text {display: block;line-height: normal;color: #333;font-size: 12px;text-decoration: none;text-align: left;}.adpacks-poweredby {display: none;}</style><script id="_carbonads_projs" type="text/javascript" src="./menudemo_files/C6AILKT.json"></script></head>
+
+<script type="text/javascript" src="jquery-1.11.0.js"></script>
+<script type="text/javascript" src="jquery.stickyfooterbar.js"></script>
+
+	</head>
+	
+	<body>
+	
+	<header class="headertop" >
+	
+	<div class="logoMobile">
+	
+	<h1>Mobile Application Development<h1>
+	</div>
+	
+<a class= "logoicon" href="index.html " ><img src="images/Logo.png"></a>
+<a class= "iconfacebook" href="https://www.facebook.com/alex.santosdosreis " ><img src="images/facebook.png"></a>
+<a class= "iconlinkedin" href="https://ie.linkedin.com/in/alex-santos-dos-reis-8551295b" ><img src="images/linkedin.png"></a>
+<a class= "icondropBox" href="https://www.dropbox.com/home " ><img src="images/dropBox.png"></a>
+<a class= "icongitHub" href="https://github.com/AlexSantos1986 " ><img src="images/gitHub.png"></a>
+</header>
+	
+
+	<nav id="menu-wrap">
+	
+	<div id="menu-trigger">Menu</div>
+	<ul id="menu">
+		<li><a href="index.html">Home</a></li>
+
+		<li>
+			<a href="">Learn Java</a>
+			<ul>
+				<li>
+					<a href="">Java Concepts</a>
+					<ul>
+					    
+						<li><a href="encap.html">Encapsulation</a></li>
+						<li><a href="Inheritance.html">Inheritance</a></li>
+						<li><a href="Polymorphism.html">Polymorphism</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="career_java_development.html">Career Path Guide</a>
+
+				</li>
+
+			
+		</ul>
+				</li>
+				<li>
+					<a href="">about Java</a>
+					<ul>
+
+						<li><a href="WhyJava.html">Why Java</a></li>
+						<li><a href="JavaHistory.html">Java History</a></li>
+
+					</ul>
+				</li>
+
+				<li><a href="">Will content</a></li>
+
+			
+	
+	
+	
+</nav>
+
+<div class="sect sectOne"></div>
+	<div class="subSection java">
+	<div class="container">
+
+
+
+<h2>Java Polymorphism in Java – Method Overloading and Overriding</h2>
+
+<p>
+Polymorphism is the capability of a method to do different things based on the object that it is acting upon. In other words,
+polymorphism allows you define one interface and have multiple implementations. I know it sounds confusing. Don’t worry we will
+discuss this in detail.It is a  feature that allows one interface to be used for a general class of  actions.An operation may exhibit
+different behavior in different instances.The behavior depends on the types of data used in the operation.
+It plays an important role in allowing objects having different internal structures to share the same external interface.
+Polymorphism is extensively used in implementing inheritance.
+
+</p>
+
+<p>
+Following concepts demonstrate different types of polymorphism in java.
+</p><br/>
+
+<p>1)
+<a href= "https://docs.oracle.com/javase/tutorial/java/javaOO/methods.html style="color:blue;"">Method Overloading</a></p>
+
+<p>2)
+<a href= "http://docs.oracle.com/javase/tutorial/java/IandI/override.html style="color:blue;">Method Overriding</a></p>
+
+<h2>Method Definition:</h2>
+<p>
+A method is a set of code which is referred to by name and can be called (invoked) at any point in
+a program simply by utilizing the method’s name.
+</p>
+
+  <h2>Method Overloading:</h2>
+
+<p>
+In Java, it is possible to define two or more methods of same name in a class, provided that there argument
+list or parameters are different. This concept is known as Method Overloading.
+</p>
+
+<ol>
+
+<li>To call an overloaded method in Java, it is must to use the type and/or number
+ of arguments to determine which version of the overloaded method to actually call.</li>
+
+ <li>Overloaded methods may have different return types; the return type alone is insufficient to
+ distinguish two versions of a method. </li>
+
+  <li>When Java encounters a call to an overloaded method, it simply executes the version of the method
+   whose parameters match the arguments used in the call. </li>
+
+   <li>It allows the user to achieve compile time polymorphism. </li>
+
+<li>An overloaded method can throw different exceptions.</li>
+
+<li>It can have different access modifiers. </li>
+
+</ol>
+
+<div class="blockquote">
+<p><br/>
+class Overload{<br/>
+
+    void demo (int a){<br/>
+
+       System.out.println ("a: " + a);<br/>
+
+    }<br/>
+
+    void demo (int a, int b){<br/>
+
+
+       System.out.println ("a and b: " + a + "," + b);<br/>
+
+    }<br/>
+
+    double demo(double a) {<br/>
+
+       System.out.println("double a: " + a);<br/>
+
+       return a*a;<br/>
+
+    }<br/>
+
+}<br/>
+class MethodOverloading{<br/><br/>
+    public static void main (String args [])<br/>
+    {<br/>
+        Overload Obj = new Overload();<br/>
+        double result;<br/>
+        Obj .demo(10);<br/>
+        Obj .demo(10, 20);<br/>
+        result = Obj .demo(5.5);<br/>
+        System.out.println("O/P : " + result);<br/>
+    }<br/>
+}<br/>
+
+</p>
+
+</div>
+
+<p>
+Here the method demo() is overloaded 3 times: first having 1 int parameter, second one has 2 int parameters and third one is
+having double arg. The methods are invoked or called with the same type and number of parameters used.
+</p>
+
+
+<div class="blockquote">
+<h4><b>Output:</b></h4>
+
+<p><br/>
+<b>a: 10</b><br/>
+<b>a and b: 10,20</b><br/>
+<b>double a: 5.5</b><br/>
+<b>O/P : 30.25</b><br/>
+</p>
+</div>
+
+
+	</div>
+
+	<div class="sect sectTwo"></div>
+	<div class="subSection java">
+
+		<div class="container">
+
+<h2><b>Rules for Method Overloading</b></h2>
+
+<ol>
+
+<li>Overloading can take place in the same class or in its sub-class.</li>
+
+ <li>Constructor in Java can be overloaded</li>
+
+  <li>Overloaded methods must have a different argument list. </li>
+
+   <li>Overloaded method should always be the part of the same class (can also take place in sub class),
+    with same name but different parameters. </li>
+
+<li>The parameters may differ in their type or number, or in both.</li>
+
+<li>They may have the same or different return types. </li>
+
+<li>It is also known as compile time polymorphism.</li>
+
+</ol>
+
+
+<h2>Method Overriding:</h2>
+
+<p>Child class has the same method as of base class. In such cases child class overrides the parent class method
+without even touching the source code of the base class. This feature is known as method overriding.</p>
+
+
+
+<div class="blockquote">
+<p>
+
+public class BaseClass{<br/><br/>
+    public void methodToOverride() //Base class method<br/>
+    {<br/>
+         System.out.println ("I'm the method of BaseClass");<br/>
+    }<br/>
+}<br/>
+public class DerivedClass extends BaseClass<br/>
+{<br/>
+    public void methodToOverride() //Derived Class method<br/>
+    {<br/>
+         System.out.println ("I'm the method of DerivedClass");<br/>
+    }<br/>
+}<br/>
+
+public class TestMethod<br/>
+{<br/><br/>
+     public static void main (String args []) {<br/>
+        // BaseClass reference and object<br/>
+        BaseClass obj1 = new BaseClass(); <br/>
+        // BaseClass reference but DerivedClass object<br/>
+        BaseClass obj2 = new DerivedClass(); <br/>
+        // Calls the method from BaseClass class<br/>
+        obj1.methodToOverride(); <br/>
+        //Calls the method from DerivedClass class<br/>
+        obj2.methodToOverride(); <br/>
+     }<br/>
+}<br/>
+
+
+</p>
+	</div>
+
+
+<div class="blockquote">
+<h4><b>Output:</b></h4><br/>
+
+<p><br/>
+<b>I'm the method of BaseClass</b><br/>
+<b>I'm the method of DerivedClass</b>
+</p>
+</div>
+
+
+
+<h2><b>Rules for Method Overriding</b></h2>
+
+<ol>
+
+<li>Applies only to inherited methods.</li>
+
+ <li>Object type (NOT reference variable type) determines which overridden method will be used at runtime.</li>
+
+  <li>Overriding method can have different return type (refer this).</li>
+
+   <li>Overriding method must not have more restrictive access modifier.</li>
+
+<li>Abstract methods must be overridden.</li>
+
+<li>Static and final methods cannot be overridden.</li>
+
+<li>Constructors cannot be overridden.</li>
+
+<li>It is also known as Runtime polymorphism.</li>
+
+</ol>
+
+	 </div>
+		</div>
+	</div>
+
+		<div class="sect sectThree"></div>
+	<div class="subSection java">
+		<div class="container">
+<h2><b>Super keyword in Overriding:</b></h2>
+
+<p>When invoking a superclass version of an overridden method the super keyword is used.</p>
+
+
+
+<div class="blockquote">
+<p>
+class Vehicle {<br/>
+    public void move () {<br/>
+         System.out.println ("Vehicles are used for moving from one place to another ");<br/>
+    }<br/>
+}<br/><br/>
+
+class Car extends Vehicle {<br/>
+    public void move () {<br/>
+      super. move (); // invokes the super class method<br/>
+      System.out.println ("Car is a good medium of transport ");<br/>
+    }<br/>
+}<br/><br/>
+
+public class TestCar {<br/>
+    public static void main (String args []){<br/>
+        Vehicle b = new Car (); // Vehicle reference but Car object<br/>
+        b.move (); //Calls the method in Car class<br/>
+    }<br/>
+}<br/>
+
+</p>
+</div>
+
+<div class="blockquote">
+<h4><b>Output:</b></h4>
+
+<p><br/>
+<b>Vehicles are used for moving from one place to another</b><br/>
+<b>Car is a good medium of transport</b>
+</p>
+</div>
+
+
+
+
+
+
+  </div>
+</div>
+
+</div>
+	<div id="footer">Copyright 2016	| National College of Ireland	| Hdip Mobile Software Dev</div>
+	</div>
+<!--------cdsd------------>
+
+
+</body>
+
+</html>
